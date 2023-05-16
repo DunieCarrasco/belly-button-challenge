@@ -123,3 +123,17 @@ function buildBarChart(sample) {
         Plotly.newPlot("bar", [trace], layout)
     });
 };
+
+// Function that updates dashboard when sample is changed
+function optionChanged(value) { 
+
+    // Log the new value
+    console.log(value); 
+
+    // Call all functions 
+    buildMetadata(value);
+    buildBarChart(value);
+};
+
+// Call the initialize function
+init();
