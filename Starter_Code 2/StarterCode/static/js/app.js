@@ -182,6 +182,7 @@ function optionChanged(value) {
     buildMetadata(value);
     buildBarChart(value);
     buildBubbleChart(value);
+    buildGaugeChart(value);
 };
 
 // Call the initialize function
